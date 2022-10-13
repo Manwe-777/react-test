@@ -1,0 +1,56 @@
+@import url("./CardTile.scss");
+
+html, body, #root {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  background-color: #282c34;
+}
+
+:root {
+  --color-1A1A1A: #1a1a1a;
+  --color-262626: #262626;
+  --color-000214: #000214;
+  --color-1F202E: #1f202e;
+  --color-292B3D: #292b3d;
+  --color-33364D: #33364d;
+  --color-535880: #535880;
+  --color-848DCC: #848dcc;
+  --primary-orange: #f47d33;
+  --primary-orange-hover: #ff9350;
+  --primary-orange-dim: #d97536;
+  --primary-violet: #4a3bed;
+  --bright-violet: #6b5eff;
+  --white-cream: #f9f0ea;
+  --white-disabled: #6e6d7b;
+  --yellow-warning: #f4be33;
+  --error: #e8483e;
+  --sucess: #aae24e;
+  --card-white: #f2f2f4;
+  --card-blue: #0b82c6;
+  --card-green: #107f47;
+  --card-red: #fc5350;
+  --card-black: #494949;
+  --card-colorless: #9d9997;
+}
+
+.app {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+}
+
+.wrapper {
+  width: 450px;
+  margin: 16px auto;
+  display: flex;
+  flex-direction: column;
+
+  .card-element {
+    margin-bottom: 8px;
+  }
+}

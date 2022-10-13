@@ -1,0 +1,353 @@
+.card-container-tracker {
+  max-width: -webkit-fill-available;
+  height: 34px;
+  user-select: none;
+  display: flex;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 34px;
+  z-index: 1;
+
+  svg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+  }
+
+  .text {
+    z-index: 1;
+  }
+
+  .count,
+  .odds {
+    position: relative;
+    font-family: Work Sans;
+    font-weight: 600;
+    color: #535880;
+    width: 51px;
+    min-width: 51px;
+    margin-right: -3px;
+    z-index: 0;
+  }
+
+  .collection {
+    position: relative;
+    font-family: Work Sans;
+    font-weight: 600;
+    color: #848dcc;
+    width: 63px;
+    min-width: 63px;
+    margin-left: -4px;
+    z-index: 0;
+
+    .fav-star {
+      left: 10px;
+      top: 4px;
+      z-index: 2;
+    }
+
+    .text {
+      background-image: url("../assets/collection_icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-x: 20px;
+      text-indent: 24px;
+    }
+  }
+
+  .rating {
+    position: relative;
+    font-family: Work Sans;
+    font-weight: 600;
+    color: #f9f0ea;
+    width: 51px;
+    min-width: 51px;
+    margin-left: -3px;
+    z-index: 0;
+  }
+
+  .arc {
+    z-index: 1;
+
+    svg {
+      position: absolute;
+      left: 0%;
+      right: 0%;
+      top: 0%;
+      bottom: 0%;
+    }
+  }
+
+  .arc,
+  .corner {
+    width: 9px;
+    min-width: 9px;
+    position: relative;
+    z-index: 0;
+
+    &.left {
+      left: -7px;
+    }
+    &.right {
+    }
+  }
+
+  .center {
+    position: relative;
+    font-family: Libre Baskerville;
+    font-weight: bold;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-left: -7px;
+
+    .rebalanced-icon {
+      background-image: url("../assets/alchemy-card.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      min-height: 22px;
+      min-width: 22px;
+      height: 22px;
+      width: 22px;
+      margin: auto 4px auto 0;
+    }
+
+    .text {
+      height: 34px;
+      line-height: 34px;
+      width: auto;
+      margin-left: 2px;
+      position: relative;
+      z-index: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-family: Work Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      text-align: center;
+      color: #535880;
+    }
+
+    .name {
+      width: auto;
+      margin-left: 2px;
+      margin-right: auto;
+      position: relative;
+      z-index: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #848dcc;
+      -webkit-transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .cost {
+      display: flex;
+      height: 14px;
+      margin: auto 0;
+      position: relative;
+      z-index: 1;
+
+      svg {
+        position: inherit !important;
+      }
+    }
+  }
+}
+
+.card-container-lobby {
+  page-break-inside: avoid;
+  max-width: -webkit-fill-available;
+  height: 26px;
+  user-select: none;
+  display: flex;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 26px;
+  z-index: 1;
+
+  .text {
+    z-index: 1;
+    text-align: left;
+  }
+
+  .count,
+  .odds {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 26px;
+    width: 28px;
+    min-width: 28px;
+    color: #535880;
+  }
+
+  .collection {
+    position: relative;
+    font-family: Work Sans;
+    font-weight: 600;
+    text-align: right;
+    color: #848dcc;
+    width: 36px;
+    min-width: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 6px;
+    background-image: url("../assets/collection_icon.svg");
+
+    &.missing {
+      background-image: url("../assets/collection_icon_orange.svg");
+
+      .text {
+        color: var(--primary-orange);
+      }
+    }
+
+    .text {
+      text-align: right;
+    }
+
+    .gray {
+      color: var(--color-33364D);
+    }
+  }
+
+  .rating {
+    position: relative;
+    font-family: Work Sans;
+    font-weight: 600;
+    color: #f9f0ea;
+    width: 51px;
+    min-width: 51px;
+    margin-left: -3px;
+  }
+
+  .arc {
+    z-index: 1;
+    margin-right: 12px;
+
+    svg {
+      height: 26px;
+      position: absolute;
+      left: 0%;
+      right: 0%;
+      top: 0%;
+      bottom: 0%;
+    }
+  }
+
+  .arc,
+  .corner {
+    position: relative;
+
+    &.left {
+    }
+    &.right {
+    }
+  }
+
+  .center {
+    position: relative;
+    font-family: Libre Baskerville;
+    font-weight: bold;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .rebalanced-icon {
+      background-image: url("../assets/alchemy-card.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      height: 20px;
+      width: 20px;
+      min-height: 20px;
+      min-width: 20px;
+      margin: auto -2px auto 4px;
+      background-position-y: 1px;
+    }
+
+    .text {
+      height: 26px;
+      line-height: 26px;
+      width: auto;
+      margin-left: 6px;
+      position: relative;
+      z-index: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-family: Work Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      text-align: center;
+      color: #535880;
+    }
+
+    .name {
+      margin-left: 6px;
+      margin-right: auto;
+      height: 26px;
+      width: auto;
+      position: relative;
+      z-index: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-family: Libre Baskerville;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 27px;
+      color: #848dcc;
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+      -webkit-transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .cost {
+      display: flex;
+      height: 14px;
+      margin: auto 0;
+      position: relative;
+      z-index: 1;
+
+      svg {
+        position: inherit !important;
+      }
+    }
+  }
+}
+
+.GenericSymbol {
+  display: flex;
+  position: relative;
+  margin: auto 2px;
+  height: 14px;
+  width: 14px;
+  min-width: 14px;
+  min-height: 14px;
+
+  .SymbolText {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 0px;
+    top: 1px;
+    font-family: Halant;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: var(--color-1F202E);
+  }
+}
